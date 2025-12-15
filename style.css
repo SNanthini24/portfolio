@@ -1,6 +1,6 @@
-/* ================================
-   RESET & BASE STYLES
-================================ */
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +11,16 @@
 body {
   background: #f9fafb;
   color: #111827;
+  font-size: 16px;
   line-height: 1.6;
 }
 
-/* ================================
+/* =========================
    HERO SECTION
-================================ */
+========================= */
 .hero {
   text-align: center;
-  padding: 90px 20px;
+  padding: 70px 20px; /* slightly reduced */
   background: linear-gradient(135deg, #2563eb, #1e40af);
   color: #ffffff;
 }
@@ -34,33 +35,32 @@ body {
 }
 
 .hero h2 {
-  margin-top: 12px;
+  margin-top: 8px;
   font-size: 22px;
   font-weight: 500;
 }
 
 .hero p {
   max-width: 650px;
-  margin: 22px auto;
-  font-size: 16px;
+  margin: 16px auto;
 }
 
 .buttons {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .btn {
-  padding: 12px 26px;
+  padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 6px;
   font-weight: 600;
   display: inline-block;
 }
 
 .primary {
   background: #22c55e;
-  color: #000;
+  color: #000000;
 }
 
 .secondary {
@@ -68,152 +68,135 @@ body {
   color: #ffffff;
 }
 
-/* ================================
-   SECTION BASE
-================================ */
+/* =========================
+   SECTION LAYOUT (COMPACT)
+========================= */
 .section {
   max-width: 1100px;
   margin: auto;
-  padding: 50px 20px;
+  padding: 36px 20px; /* 🔥 MAIN CHANGE: less space */
 }
 
+/* Section Headings */
 .section h3 {
-  font-size: 30px;
-   margin-top: 0;
-  margin-bottom: 22px;
+  font-size: 26px;
+  font-weight: 600;
   text-align: center;
+  margin: 0 0 18px 0; /* no top gap */
 }
 
+/* Remove space at end of section */
+.section > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   TEXT
+========================= */
 .section p {
   max-width: 900px;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 12px auto;
   text-align: center;
 }
 
-/* Compact sections (text-heavy) */
-.about,
-.contact,
-.skills,
-.certifications {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.project-card p {
+  text-align: left;
 }
 
-/* ================================
-   SKILLS SECTION
-================================ */
+/* =========================
+   SKILLS
+========================= */
 .skills-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .skill-group h4 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: #2563eb;
+  font-size: 15px;
+  margin-bottom: 10px;
   text-align: center;
+  color: #2563eb;
 }
 
 .skill-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .skill-grid span {
   background: #eef2ff;
   color: #1e40af;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 500;
 }
 
-/* ================================
+/* =========================
    PROJECTS
-================================ */
+========================= */
 .project-card {
   background: #ffffff;
-  padding: 26px;
-  border-radius: 14px;
-  margin-bottom: 32px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-
-  /* Scroll animation initial state */
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-
-.project-card.show {
-  opacity: 1;
-  transform: translateY(0);
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 24px; /* reduced gap between cards */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
 }
 
 .project-card h4 {
-  margin: 14px 0;
   font-size: 20px;
-}
-
-.project-card p {
-  text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .project-card ul {
   margin-left: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .project-card li {
+  font-size: 15px;
   margin-bottom: 6px;
 }
 
 .project-card img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
-/* Power BI multi-page images */
+/* Power BI images */
 .dashboard-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-  margin-bottom: 18px;
+  gap: 14px;
+  margin-bottom: 14px;
 }
 
-.dashboard-images img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-}
-
-/* Tools + links */
+/* Tools text */
 .tools {
   font-size: 14px;
   color: #6b7280;
-  margin-top: 6px;
 }
 
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
+/* Links */
+.project-card a,
+.cert-list a {
   color: #2563eb;
   font-weight: 600;
   text-decoration: none;
 }
 
-.project-card a:hover {
+.project-card a:hover,
+.cert-list a:hover {
   text-decoration: underline;
 }
 
-/* ================================
+/* =========================
    CERTIFICATIONS
-================================ */
+========================= */
 .cert-list {
   list-style: none;
   max-width: 800px;
@@ -222,51 +205,44 @@ body {
 }
 
 .cert-list li {
-  margin-bottom: 16px;
   text-align: center;
-  line-height: 1.6;
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
-.cert-list a {
-  margin-left: 8px;
-  color: #2563eb;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.cert-list a:hover {
-  text-decoration: underline;
-}
-
-/* ================================
+/* =========================
    CONTACT
-================================ */
+========================= */
 .contact p {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .open {
   font-weight: 600;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
-/* ================================
+/* =========================
    FOOTER
-================================ */
+========================= */
 footer {
   text-align: center;
-  padding: 22px;
+  padding: 18px;
   background: #111827;
   color: #ffffff;
 }
 
-/* ================================
-   MOBILE RESPONSIVE
-================================ */
+/* =========================
+   MOBILE (EVEN MORE COMPACT)
+========================= */
 @media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
   .hero {
-    padding: 60px 16px;
+    padding: 55px 16px;
   }
 
   .hero h1 {
@@ -278,47 +254,19 @@ footer {
   }
 
   .section {
-    padding: 50px 16px;
+    padding: 28px 16px; /* 🔥 very compact on mobile */
   }
 
-  .about,
-  .contact,
-  .skills,
-  .certifications {
-    padding-top: 26px;
-    padding-bottom: 0px;
+  .section h3 {
+    font-size: 22px;
   }
 
   .project-card {
-    padding: 20px;
+    padding: 18px;
   }
 
   .btn {
     display: block;
-    margin: 10px auto;
+    margin: 8px auto;
   }
 }
-.section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 50px 20px;
-}
-.section > *:last-child {
-  margin-bottom: 0 !important;
-}
-
-.section ul {
-  margin-bottom: 0;
-}
-.section h3 {
-  font-size: 28px;
-  font-weight: 600;
-  text-align: center;
-  margin: 0 0 24px 0; /* no top margin, controlled bottom space */
-}
-
-
-
-
-
-
