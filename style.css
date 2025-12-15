@@ -277,7 +277,7 @@ footer {
   }
 
   .section {
-    padding: 50px 16px;
+    padding: 60px 20px;
   }
 
   .about,
@@ -297,3 +297,11 @@ footer {
     margin: 10px auto;
   }
 }
+/* Remove extra space at the end of sections */
+.section > *:last-child {
+  margin-bottom: 0 !important;
+}
+.section ul:last-child {
+  margin-bottom: 0;
+}
+
