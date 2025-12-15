@@ -74,11 +74,12 @@ body {
 .section {
   max-width: 1100px;
   margin: auto;
-  padding: 70px 20px;
+  padding: 50px 20px;
 }
 
 .section h3 {
   font-size: 30px;
+   margin-top: 0;
   margin-bottom: 22px;
   text-align: center;
 }
@@ -309,4 +310,12 @@ footer {
 .section ul {
   margin-bottom: 0;
 }
+.section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 24px 0; /* no top margin, controlled bottom space */
+}
+
+
 
