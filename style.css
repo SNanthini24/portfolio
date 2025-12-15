@@ -286,7 +286,7 @@ footer {
   .skills,
   .certifications {
     padding-top: 36px;
-    padding-bottom: 36px;
+    padding-bottom: 10px;
   }
 
   .project-card {
@@ -316,6 +316,7 @@ footer {
   text-align: center;
   margin: 0 0 24px 0; /* no top margin, controlled bottom space */
 }
+
 
 
 
