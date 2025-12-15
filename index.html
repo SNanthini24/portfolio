@@ -26,27 +26,6 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-  <div class="nav-container">
-    <span class="nav-logo">Nanthini S</span>
-
-    <div class="nav-links">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#certifications" class="nav-link">Certifications</a>
-      <a href="#contact" class="nav-link">Contact</a>
-
-      <a href="https://snanthini24.github.io/portfolio/Nanthini_Resume.pdf"
-         target="_blank"
-         class="nav-resume">
-        Resume
-      </a>
-    </div>
-  </div>
-</nav>
-
 <!-- ================= HERO ================= -->
 <header id="top" class="hero">
   <h1>Hi I'm Nanthini</h1>
@@ -267,30 +246,7 @@
 <footer>
   <p>© 2025 Nanthini S</p>
 </footer>
-
-<!-- ================= ACTIVE NAV SCRIPT ================= -->
-<script>
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-
+  
 </body>
 </html>
+
