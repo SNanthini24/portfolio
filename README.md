@@ -22,7 +22,7 @@ It highlights my skills in data cleaning, exploratory data analysis (EDA), and d
 - Loan Management Data Analysis (SQL)
 
 ## 🌐 Live Portfolio
-👉 https://snanthini24.github.io/data-analyst-portfolio/
+👉 https://snanthini24.github.io/portfolio/
 
 ## 📫 Contact
 - GitHub: https://github.com/SNanthini24
