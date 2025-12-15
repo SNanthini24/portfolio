@@ -16,77 +16,6 @@ body {
 }
 
 /* =========================
-   NAVBAR
-========================= */
-.navbar {
-  position: sticky;
-  top: 0;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  z-index: 1000;
-}
-
-.nav-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 12px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-weight: 700;
-  color: #2563eb;
-  font-size: 16px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link {
-  margin-left: 18px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: #111827;
-  padding-bottom: 4px;
-}
-
-.nav-link:hover {
-  color: #2563eb;
-}
-
-.nav-link.active {
-  color: #2563eb;
-  border-bottom: 2px solid #2563eb;
-}
-
-.nav-resume {
-  margin-left: 22px;
-  padding: 6px 14px;
-  background: #2563eb;
-  color: #ffffff !important;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.nav-resume:hover {
-  background: #1e40af;
-}
-
-/* Hide nav links on mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-}
-
-/* =========================
    HERO SECTION
 ========================= */
 .hero {
@@ -339,3 +268,4 @@ footer {
     margin: 8px auto;
   }
 }
+
