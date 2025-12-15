@@ -1,279 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Nanthini S | Data Analyst Portfolio</title>
 
   <!-- SEO -->
-  <meta name="description" content="Entry-level Data Analyst portfolio showcasing Excel, SQL, Python, and Power BI dashboards with real business insights.">
-  <meta name="keywords" content="Data Analyst Fresher, Excel Dashboard, Power BI Portfolio, SQL Projects, Data Analytics">
-  <meta name="author" content="Nanthini S">
+  <meta name="description" content="Data Analyst portfolio showcasing Excel, SQL, and Power BI projects with real-world dashboards." />
+  <meta name="author" content="Nanthini S" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Smooth scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Hi, I'm <span>Nanthini</span></h1>
-    <h2>Data Analyst | Excel | SQL | Power BI</h2>
-    <p>
-      I analyze business data and build dashboards using 
-      SQL, Excel, Python, and Power BI to support data-driven decisions.
-    </p>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="nav-container">
+    <span class="nav-logo">Nanthini S</span>
 
-    <div class="buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
       <a href="https://snanthini24.github.io/portfolio/Nanthini_Resume.pdf"
-         class="btn secondary"
-         target="_blank">
+         target="_blank"
+         class="nav-resume">
+        Resume
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="top" class="hero">
+  <h1>Hi I'm Nanthini</h1>
+
+  <h2>Data Analyst | Excel | SQL | Power BI</h2>
+
+  <p>
+    Analyzing data and building dashboards to support clear, data-driven business decisions.
+  </p>
+
+  <div class="buttons">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="https://snanthini24.github.io/portfolio/Nanthini_Resume.pdf"
+       target="_blank"
+       class="btn secondary">
       View Resume
-      </a>
-    </div>
-    <p style="margin-top: 14px; font-size: 14px; opacity: 0.9;">
-      Based in Chennai | Open to Remote Opportunities
-    </p>
-  </header>
+    </a>
+  </div>
 
-  <!-- ABOUT -->
-  <section class="section about">
-    <h3>About Me</h3>
+  <p style="margin-top: 12px; font-size: 14px; opacity: 0.9;">
+    Based in Chennai | Open to Remote Opportunities
+  </p>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about">
+  <h3>About Me</h3>
+
+  <p>
+    I am a Data Analyst with strong fundamentals in data analysis, reporting, and dashboard
+    development. I work with Excel, SQL, and Power BI to analyze data, identify trends,
+    and present insights in a clear and structured manner.
+  </p>
+
+  <p>
+    Through hands-on projects, I have gained experience in data cleaning, exploratory data
+    analysis (EDA), and building interactive dashboards from raw datasets. I focus on
+    understanding business requirements and translating data into insights that support
+    informed decision-making.
+  </p>
+
+  <p>
+    I am actively seeking entry-level Data Analyst or Business Analyst opportunities where
+    I can contribute to data-driven initiatives while continuing to grow my technical and
+    analytical skills.
+  </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section skills">
+  <h3>Skills</h3>
+
+  <div class="skills-wrapper">
+    <div class="skill-group">
+      <h4>Core Analysis</h4>
+      <div class="skill-grid">
+        <span>Data Cleaning</span>
+        <span>Exploratory Data Analysis</span>
+        <span>Business Insights</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Tools</h4>
+      <div class="skill-grid">
+        <span>SQL (Joins, Subqueries)</span>
+        <span>Excel (Pivot Tables, Dashboards)</span>
+        <span>Power BI (DAX, Data Modeling)</span>
+        <span>Python (Pandas, NumPy)</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Reporting</h4>
+      <div class="skill-grid">
+        <span>Dashboard Design</span>
+        <span>Data Visualization</span>
+        <span>KPI Reporting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <h3>Projects</h3>
+
+  <!-- Excel Project -->
+  <div class="project-card">
+    <img src="images/Walmart_dashboard.jpeg" alt="Walmart Sales Excel Dashboard">
+
+    <h4>Walmart Sales Analysis Dashboard | Excel</h4>
+
     <p>
-      I am a Data Analyst with strong fundamentals in data analysis, reporting, and
-      dashboard development. I work with Excel, SQL, and Power BI to analyze data,
-      identify trends, and present insights in a clear and structured manner.
+      Developed an interactive Excel dashboard to analyze large-scale sales data and
+      support performance monitoring.
     </p>
-    <p>
-      Through hands-on projects, I have gained experience in data cleaning,
-      exploratory data analysis (EDA), and building interactive dashboards from
-      raw datasets. I focus on understanding business requirements and translating
-      data into insights that support informed decision-making.
-    </p>
-    <p>
-      I am actively seeking entry-level Data Analyst or Business Analyst opportunities
-      where I can contribute to data-driven initiatives while continuing to grow my
-      technical and analytical skills.
-    </p>
-  </section>
 
-  <!-- SKILLS -->
-  <section class="section skills">
-    <h3>Skills</h3>
-
-    <div class="skills-wrapper">
-
-      <div class="skill-group">
-        <h4>Data Analysis</h4>
-        <div class="skill-grid">
-          <span>Data Cleaning</span>
-          <span>Exploratory Data Analysis (EDA)</span>
-          <span>Business Insights</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h4>Tools & Technologies</h4>
-        <div class="skill-grid">
-          <span>SQL (Joins, Subqueries)</span>
-          <span>Excel (Pivot Tables, Dashboards)</span>
-          <span>Power BI (DAX, Data Modeling)</span>
-          <span>Python (Pandas, NumPy)</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h4>Visualization & Reporting</h4>
-        <div class="skill-grid">
-          <span>Dashboard Design</span>
-          <span>Data Validation</span>
-          <span>KPI Reporting</span>
-          <span>Data Visualization</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <h3>Projects</h3>
-
-    <!-- EXCEL PROJECT -->
-    <div class="project-card">
-
-      <h4>Walmart Sales Analysis Dashboard | Excel</h4>
-      <img src="images/Walmart_Dashboard.jpeg" alt="Walmart Sales Excel Dashboard">
-      <p>
-        Developed an interactive Excel-based sales dashboard to analyze large-scale
-        transactional data and support business performance monitoring.
-      </p>
-
-      <ul>
-        <li>Cleaned and structured 50,000+ sales records for analysis</li>
-        <li>Analyzed revenue trends, customer behavior, and product performance</li>
-        <li>Identified top-performing cities and products using pivot-based analysis</li>
-        <li>Assessed the impact of discounts on sales volume and revenue</li>
-        <li>Built dynamic dashboards using Pivot Tables, charts, and slicers</li>
-      </ul>
-      <p class="tools">
-        Tools: Microsoft Excel, Pivot Tables, Data Cleaning, Exploratory Data Analysis
-      </p>
-
-      <p><strong>Outcome:</strong> Enabled faster identification of sales trends and performance drivers through a single interactive reporting view.</p>
-       <a href="https://github.com/SNanthini24/Walmart-Sales-Dashboard-Excel" target="_blank">
-        View Project on GitHub
-      </a>
-    </div>
-
-
-    <!-- POWER BI PROJECT -->
-    <div class="project-card">
-      <h4>⭐ Featured Project: AdventureWorks Sales Analysis | Power BI</h4>
-
-      <div class="dashboard-images">
-        <img src="images/Executive_Dashboard.jpg" alt="Sales Overview Dashboard">
-        <img src="images/Product_Dashboard.jpg" alt="Product Performance Dashboard">
-        <img src="images/Customer_Dashboard.jpg" alt="Customer Analysis Dashboard">
-      </div>
-
-      <p>
-        Designed a multi-page Power BI dashboard to transform raw sales data into
-        meaningful insights for business stakeholders.
-      </p>
-
-      <ul>
-        <li>Built data models and relationships to support accurate reporting</li>
-        <li>Created DAX measures for KPIs such as revenue, profit, and growth trends</li>
-        <li>Developed interactive visuals to analyze product, region, and customer performance</li>
-        <li>Implemented slicers and drill-downs for dynamic data exploration</li>
-        <li>Ensured clarity and usability for non-technical stakeholders</li>
-      </ul>
-
-      <p class="tools">
-        Tools: Power BI, DAX, SQL, Data Modeling
-      </p>
-
-      <p><strong>Outcome:</strong> Provided a consolidated view of sales performance, enabling stakeholders to monitor KPIs and identify improvement areas.</p>
-
-      <a href="https://github.com/SNanthini24/powerbi-adventureworks-sales-analysis" target="_blank">
-        View Project on GitHub
-      </a>
-    </div>
-
-    <!-- SQL PROJECT -->
-    <div class="project-card">
-      <h4>Loan Management Data Analysis | SQL</h4>
-
-      <p>
-        Conducted SQL-based analysis on loan datasets to derive insights related to
-        loan approvals, repayment behavior, and customer risk.
-      </p>
-
-      <ul>
-        <li>Wrote complex SQL queries using joins, subqueries, and aggregations</li>
-        <li>Analyzed loan approval rates and repayment patterns</li>
-        <li>Identified high-risk customer segments based on repayment history</li>
-        <li>Generated summary reports to support data-driven decision-making</li>
-      </ul>
-
-      <p class="tools">
-        Tools: SQL, MySQL
-      </p>
-
-      <p><strong>Outcome:</strong> Improved visibility into loan performance and customer risk factors through structured SQL reporting.</p>
-
-      <a href="https://github.com/SNanthini24/SQL-Loan-Management-analysis" target="_blank">
-        View Project on GitHub
-      </a>
-    </div>
-
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="section certifications">
-    <h3>Certifications</h3>
-    <ul class="cert-list">
-      <li>
-        <strong>IBM Data Analytics Certificate</strong> – Cognitive Class (2025)
-        <a href="https://drive.google.com/file/d/1zUXlZXO_n_zoB-RLQMCJO4ZKN1aKsxTL/view?usp=drivesdk" target="_blank">View Certificate</a>
-      </li>
-      <li>
-        <strong>GenAI Powered Data Analytics Job Simulation</strong> – TATA Forage (2025)
-        <a href="https://drive.google.com/file/d/1zLs287UPhbYvr5Yuke2IHyOPvT_s1uNZ/view?usp=drivesdk" target="_blank">View Certificate</a>
-      </li>
-      <li>
-        <strong>Oracle Cloud Infrastructure Foundations</strong> – Oracle (2024)
-        <a href="PASTE_SQL_CERT_LINK_HERE" target="_blank">View Certificate</a>
-      </li>
+    <ul>
+      <li>Cleaned and structured 50,000+ sales records</li>
+      <li>Analyzed revenue trends, product performance, and customer behavior</li>
+      <li>Built dynamic dashboards using Pivot Tables and slicers</li>
     </ul>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="section contact">
-    <h3>Contact</h3>
+    <p class="tools">Tools: Microsoft Excel, Data Cleaning, EDA</p>
 
-    <p>Email: <a href="mailto:nanthinisakthinathan@gmail.com">nanthinisakthinathan@gmail.com</a></p>
+    <p><strong>Outcome:</strong> Enabled faster identification of sales trends through a single reporting view.</p>
+    <a href="https://github.com/SNanthini24/Walmart-Sales-Dashboard-Excel" target="_blank">
+      View Project on GitHub
+    </a>
+  </div>
+
+  <!-- Power BI Project -->
+  <div class="project-card">
+    <h4>⭐ Featured Project: AdventureWorks Sales Analysis | Power BI</h4>
+
+    <div class="dashboard-images">
+      <img src="images/Executive_Dashboard.jpg" alt="Sales Overview Dashboard">
+      <img src="images/Product_Dashboard.jpg" alt="Product Performance Dashboard">
+      <img src="images/Customer_Dashboard.jpg" alt="Customer Analysis Dashboard">
+    </div>
 
     <p>
-      GitHub:
-      <a href="https://github.com/SNanthini24" target="_blank">
-        github.com/SNanthini24
-      </a>
+      Designed a multi-page Power BI dashboard to transform raw sales data into meaningful
+      insights for business stakeholders.
     </p>
+
+    <ul>
+      <li>Built data models and relationships for accurate reporting</li>
+      <li>Created DAX measures for KPIs and trends</li>
+      <li>Developed interactive visuals for product and customer analysis</li>
+      <li>Implemented slicers and drill-downs for dynamic data exploration</li>
+      <li>Ensured clarity and usability for non-technical stakeholders</li>
+    </ul>
+
+    <p class="tools">Tools: Power BI, DAX, SQL</p>
+
+    <p><strong>Outcome:</strong> Provided a consolidated view of KPIs to support decision-making.</p>
+
+    <a href="https://github.com/SNanthini24/powerbi-adventureworks-sales-analysis" target="_blank">
+      View Project on GitHub
+    </a>
+  </div>
+
+  <!-- SQL Project -->
+  <div class="project-card">
+    <h4>Loan Management Data Analysis | SQL</h4>
 
     <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/nanthini-s-dataanalyst" target="_blank">
-        www.linkedin.com/in/nanthini-s-dataanalyst
-      </a>
+      Performed SQL-based analysis on loan datasets to evaluate approval patterns,
+      repayment behavior, and customer risk.
     </p>
 
-    <p class="open">
-      Actively seeking Data Analyst / Business Analyst opportunities in Chennai and remote.
-    </p>
-  </section>
+    <ul>
+      <li>Used joins, aggregations, and subqueries for analysis</li>
+      <li>Identified high-risk customer segments</li>
+      <li>Generated structured reports to support data-driven decision making</li>
+    </ul>
 
+    <p class="tools">Tools: SQL, MySQL</p>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Nanthini S</p>
-  </footer>
+    <p><strong>Outcome:</strong> Improved visibility into loan performance and customer risk factors through SQL reporting.</p>
 
-  <!-- SCROLL ANIMATION -->
-  <script>
-    const cards = document.querySelectorAll('.project-card');
+    <a href="https://github.com/SNanthini24/SQL-Loan-Management-analysis" target="_blank">
+      View Project on GitHub
+    </a>
+  </div>
+</section>
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 });
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="section certifications">
+  <h3>Certifications</h3>
 
-    cards.forEach(card => observer.observe(card));
-  </script>
+  <ul class="cert-list">
+    <li>
+      <strong>IBM Data Analytics Certificate</strong> – Cognitive Class (2025)
+      <a href="https://drive.google.com/file/d/1zUXlZXO_n_zoB-RLQMCJO4ZKN1aKsxTL/view?usp=drivesdk" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <strong>GenAI Powered Data Analytics Job Simulation</strong> – TATA Forage (2025)
+      <a href="https://drive.google.com/file/d/1zLs287UPhbYvr5Yuke2IHyOPvT_s1uNZ/view?usp=drivesdk" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <strong>Oracle Cloud Infrastructure Foundations</strong> – Oracle (2024)
+      <a href="PASTE_SQL_CERT_LINK_HERE" target="_blank">View Certificate</a>
+    </li>
+  </ul>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+  <h3>Contact</h3>
+
+  <p>Email:
+    <a href="mailto:nanthinisakthinathan@gmail.com">nanthinisakthinathan@gmail.com</a>
+  </p>
+
+  <p>
+    GitHub:
+    <a href="https://github.com/SNanthini24" target="_blank">
+      github.com/SNanthini24
+    </a>
+  </p>
+
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/nanthini-s-dataanalyst" target="_blank">
+      www.linkedin.com/in/nanthini-s-dataanalyst
+    </a>
+  </p>
+
+  <p class="open">
+    Actively seeking Data Analyst / Business Analyst opportunities in Chennai and remote.
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 Nanthini S</p>
+</footer>
+
+<!-- ================= ACTIVE NAV SCRIPT ================= -->
+<script>
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
