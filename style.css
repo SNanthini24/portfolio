@@ -85,6 +85,15 @@ body {
 .section > *:last-child {
   margin-bottom: 0 !important;
 }
+/* =========================
+   SECTION CARD (BOX STYLE)
+========================= */
+.section-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
 
 /* =========================
    TEXT
@@ -268,4 +277,5 @@ footer {
     margin: 8px auto;
   }
 }
+
 
