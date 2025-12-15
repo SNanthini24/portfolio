@@ -1,4 +1,6 @@
-/* RESET & BASE */
+/* ================================
+   RESET & BASE STYLES
+================================ */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,9 @@ body {
   line-height: 1.6;
 }
 
-/* HERO SECTION */
+/* ================================
+   HERO SECTION
+================================ */
 .hero {
   text-align: center;
   padding: 90px 20px;
@@ -32,7 +36,7 @@ body {
 .hero h2 {
   margin-top: 12px;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .hero p {
@@ -64,7 +68,9 @@ body {
   color: #ffffff;
 }
 
-/* SECTIONS */
+/* ================================
+   SECTION BASE
+================================ */
 .section {
   max-width: 1100px;
   margin: auto;
@@ -77,31 +83,57 @@ body {
   text-align: center;
 }
 
-/* ABOUT */
 .section p {
   max-width: 900px;
   margin: 0 auto 16px auto;
   text-align: center;
 }
 
-/* SKILLS */
-.skills .skill-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 14px;
+/* Compact sections (text-heavy) */
+.about,
+.contact,
+.skills,
+.certifications {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* ================================
+   SKILLS SECTION
+================================ */
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
   margin-top: 20px;
 }
 
+.skill-group h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #2563eb;
+  text-align: center;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
 .skill-grid span {
-  background: #e5e7eb;
+  background: #eef2ff;
+  color: #1e40af;
   padding: 10px 16px;
-  border-radius: 20px;
-  font-size: 14px;
+  border-radius: 999px;
+  font-size: 13px;
   font-weight: 500;
 }
 
-/* PROJECT CARDS */
+/* ================================
+   PROJECTS
+================================ */
 .project-card {
   background: #ffffff;
   padding: 26px;
@@ -145,7 +177,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* POWER BI MULTI-PAGE IMAGES */
+/* Power BI multi-page images */
 .dashboard-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -159,14 +191,13 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* TOOLS TEXT */
+/* Tools + links */
 .tools {
   font-size: 14px;
   color: #6b7280;
   margin-top: 6px;
 }
 
-/* LINKS */
 .project-card a {
   display: inline-block;
   margin-top: 10px;
@@ -179,7 +210,9 @@ body {
   text-decoration: underline;
 }
 
-/* CERTIFICATIONS */
+/* ================================
+   CERTIFICATIONS
+================================ */
 .cert-list {
   list-style: none;
   max-width: 800px;
@@ -204,7 +237,9 @@ body {
   text-decoration: underline;
 }
 
-/* CONTACT */
+/* ================================
+   CONTACT
+================================ */
 .contact p {
   text-align: center;
   margin-bottom: 8px;
@@ -215,7 +250,9 @@ body {
   margin-top: 12px;
 }
 
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 footer {
   text-align: center;
   padding: 22px;
@@ -223,26 +260,40 @@ footer {
   color: #ffffff;
 }
 
-/* MOBILE RESPONSIVE */
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
 @media (max-width: 768px) {
   .hero {
-    padding: 70px 16px;
+    padding: 60px 16px;
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .hero h2 {
     font-size: 18px;
   }
 
-  .btn {
-    display: block;
-    margin: 12px auto;
+  .section {
+    padding: 50px 16px;
   }
 
-  .section h3 {
-    font-size: 24px;
+  .about,
+  .contact,
+  .skills,
+  .certifications {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .btn {
+    display: block;
+    margin: 10px auto;
   }
 }
